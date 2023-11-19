@@ -81,37 +81,125 @@ a {
   }
 }
 
-.def-heading h2 {
-  color: #333;
-  text-align: center;
-  font-size: 2.6875rem;
-  font-weight: 700;
-  line-height: 178.509%; /* 76.759px */
-  margin-bottom: -8px;
-  padding-bottom: 0;
-}
-@media (max-width: 576px) {
-  .def-heading h2 {
-    font-size: 2rem;
-  }
-}
-.def-heading span {
-  color: #828282;
-  font-size: 1.8125rem;
-  font-weight: 300;
-  line-height: 178.509%;
-}
-@media (max-width: 576px) {
-  .def-heading span {
-    font-size: 1.25rem;
-  }
-}
-
-header {
+.header {
   width: 100%;
-  height: 1000px;
+  height: 1100px;
   background: url("../images/header-bg.svg") no-repeat center bottom;
   background-size: contain;
+  position: relative;
+  overflow: hidden;
+  padding-top: 39px;
+}
+.header .pattern-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.header .pattern-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header-title {
+  color: #333;
+  font-size: 43px;
+  font-weight: 800;
+  width: 100%;
+  max-width: 932px;
+  margin-top: 70px;
+  text-shadow: rgb(255, 255, 255) 6px 0 0, rgb(255, 255, 255) 5.91686px 0.995377px 0, rgb(255, 255, 255) 5.66974px 1.96317px 0, rgb(255, 255, 255) 5.2655px 2.87655px 0px, rgb(255, 255, 255) 4.71532px 3.71022px 0, rgb(255, 255, 255) 4.03447px 4.44106px 0, rgb(255, 255, 255) 3.24181px 5.04883px 0, rgb(255, 255, 255) 2.35931px 5.51667px 0px, rgb(255, 255, 255) 1.41143px 5.83163px 0, rgb(255, 255, 255) 0.424423px 5.98497px 0, rgb(255, 255, 255) -0.574341px 5.97245px 0px, rgb(255, 255, 255) -1.55719px 5.79441px 0px, rgb(255, 255, 255) -2.49688px 5.45578px 0px, rgb(255, 255, 255) -3.36738px 4.96596px 0px, rgb(255, 255, 255) -4.14455px 4.33852px 0px, rgb(255, 255, 255) -4.80686px 3.59083px 0px, rgb(255, 255, 255) -5.33596px 2.74364px 0px, rgb(255, 255, 255) -5.71718px 1.8204px 0px, rgb(255, 255, 255) -5.93995px 0.84672px 0px, rgb(255, 255, 255) -5.99811px -0.150428px 0px, rgb(255, 255, 255) -5.89004px -1.14341px 0px, rgb(255, 255, 255) -5.61874px -2.1047px 0px, rgb(255, 255, 255) -5.19172px -3.00766px 0px, rgb(255, 255, 255) -4.62082px -3.82727px 0px, rgb(255, 255, 255) -3.92186px -4.54081px 0px, rgb(255, 255, 255) -3.11421px -5.12852px 0px, rgb(255, 255, 255) -2.22026px -5.57409px 0px, rgb(255, 255, 255) -1.26477px -5.86518px 0px, rgb(255, 255, 255) -0.274238px -5.99373px 0px, rgb(255, 255, 255) 0.723898px -5.95617px 0px, rgb(255, 255, 255) 1.70197px -5.75355px 0px, rgb(255, 255, 255) 2.63288px -5.39147px 0px, rgb(255, 255, 255) 3.49082px -4.87998px 0px, rgb(255, 255, 255) 4.25202px -4.23324px 0px, rgb(255, 255, 255) 4.89538px -3.46919px 0px, rgb(255, 255, 255) 5.40307px -2.60899px 0px, rgb(255, 255, 255) 5.76102px -1.67649px 0px, rgb(255, 255, 255) 5.95932px -0.697531px 0px;
+}
+.header-title span {
+  color: #495AEF;
+}
+.header-time {
+  width: auto;
+  position: absolute;
+  top: 175px;
+  right: 0;
+}
+.header-time-title {
+  color: #5A5A5A;
+  font-size: 19.03px;
+  font-weight: 500;
+  margin-bottom: 39px;
+}
+.header-time-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-time-item {
+  border: 2px solid #5A5A5A;
+  border-radius: 10px;
+  width: 59.727px;
+  height: 73px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+}
+.header-time-item:nth-of-type(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.header-time-item-count {
+  font-size: 35px;
+  color: #5A5A5A;
+  font-weight: 700;
+}
+.header-time-item-name {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 16px;
+  color: #5A5A5A;
+}
+
+.menu-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-site-item {
+  color: #5A5A5A;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 19px;
+  transition: 0.3s;
+}
+.menu-site-item:hover {
+  color: #E83B3A;
+}
+.menu-site-item.active {
+  color: #E83B3A;
+}
+.menu-site-item:last-child {
+  margin-right: 0;
+}
+.menu-site-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.menu-site-items-solid-one {
+  width: 52px;
+  height: 2px;
+  background: #E83B3A;
+  position: absolute;
+  left: 0;
+  bottom: -17px;
+  transition: 0.5s;
+}
+.menu-site-items-solid-two {
+  width: 29px;
+  height: 2px;
+  background: #E83B3A;
+  position: absolute;
+  left: 0;
+  bottom: -22px;
+  transition: 0.8s;
 }
 
 .functions-item {

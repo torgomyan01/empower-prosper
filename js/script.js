@@ -25,6 +25,18 @@ defaultInput.on('focus', function (){
 
 $('.select-country').select2();
 
+const solidOne = $('.menu-site-items-solid-one');
+const solidTwo = $('.menu-site-items-solid-two');
+const menuItems = $('.menu-site-item');
+
+menuItems.on('click', function (e){
+    const x = e.target.offsetLeft;
+    solidOne.css('left', `${x}px`)
+    solidTwo.css('left', `${x}px`)
+    menuItems.removeClass(active);
+    $(this).addClass(active)
+})
+
 
 
 let statusSlider = true;
