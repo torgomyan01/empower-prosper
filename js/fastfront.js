@@ -10,11 +10,11 @@ const randomText = () => (Math.random() + 1).toString(36).substring(7);
 
 // FOR COMPONENTS
 const costs = {
-    bgBlur: 'bgBlur-',
-    color: 'c-',
-    bgc: 'bgc-',
-    fw: 'fw-',
-    zIndex: 'z-',
+    bgBlur: 'bgBlur-', // backdrop filer
+    color: 'c-', // color
+    bgc: 'bgc-', // background-color
+    fw: 'fw-', // font-width
+    zIndex: 'z-', // z-index
     opacity: 'op-',
     borderColor: 'bc-',
     paddingY: 'py-',

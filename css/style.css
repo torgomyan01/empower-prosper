@@ -56,8 +56,29 @@ a {
   }
 }
 .container {
-  max-width: 1360px;
+  max-width: 1350px;
   width: 100%;
+}
+
+.def-btn {
+  border-radius: 13px;
+  background: #E83B3A;
+  display: flex;
+  padding: 1.375rem 3.105875rem 1.4375rem 3.105875rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFF;
+  font-size: 1.1895rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media (max-width: 576px) {
+  .def-btn {
+    padding: 1.375rem 2.8rem 1.4375rem 2.8rem;
+    font-size: 1.1rem;
+  }
 }
 
 header {
@@ -78,6 +99,102 @@ header {
   background: linear-gradient(102deg, rgba(0, 0, 0, 0.12) 41.42%, rgba(0, 0, 0, 0) 83.15%), #495AEF;
   box-shadow: 0 14px 60.4px 0 rgba(73, 110, 239, 0.5);
   border: 0;
+}
+
+.About-program {
+  margin-top: 8rem;
+  position: relative;
+}
+.About-program-bg {
+  position: absolute;
+  left: -4%;
+  top: -320px;
+  z-index: -1;
+}
+@media (max-width: 768px) {
+  .About-program-bg {
+    display: none;
+  }
+}
+.About-program-heading {
+  margin-left: 3.5625rem;
+  margin-bottom: 3.5625rem;
+}
+@media (max-width: 768px) {
+  .About-program-heading {
+    margin-left: 1.5625rem;
+    margin-bottom: 2.8125rem;
+  }
+}
+.About-program-heading h2 {
+  color: #333;
+  font-size: 2.6875rem;
+  font-weight: 700;
+  line-height: 178.509%; /* 76.759px */
+  margin-bottom: -8px;
+  padding-bottom: 0;
+}
+@media (max-width: 576px) {
+  .About-program-heading h2 {
+    font-size: 2rem;
+  }
+}
+.About-program-heading span {
+  color: #828282;
+  font-size: 1.8125rem;
+  font-weight: 300;
+  line-height: 178.509%;
+}
+@media (max-width: 576px) {
+  .About-program-heading span {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  .About-program .image {
+    margin-bottom: 1.5625rem;
+  }
+}
+.About-program .image img {
+  width: 100%;
+  height: 100%;
+}
+.About-program .col-box {
+  padding-left: 2.1875rem;
+}
+@media (max-width: 768px) {
+  .About-program .col-box {
+    padding-left: 0;
+  }
+}
+.About-program .col-box p {
+  max-width: 700px;
+  width: 100%;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 202.489%; /* 32.398px */
+}
+@media (max-width: 576px) {
+  .About-program .col-box p {
+    font-size: 0.875rem;
+  }
+}
+.About-program .col-box p span {
+  font-weight: 700;
+}
+.About-program .col-box-button {
+  width: 100%;
+  text-align: center;
+  margin-top: 3.75rem;
+}
+@media (max-width: 576px) {
+  .About-program .col-box-button {
+    margin-top: 3rem;
+  }
+}
+.About-program .col-box-button button {
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
