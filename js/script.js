@@ -24,3 +24,25 @@ defaultInput.on('focus', function (){
 
 
 $('.select-country').select2();
+
+
+
+let statusSlider = true;
+
+$(window).on('resize', function (){
+    if($(window).width() <= 768 && statusSlider){
+        statusSlider = false;
+        $('.stages-program-row').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplaySpeed: 1000,
+            adaptiveHeight: true,
+            prevArrow: $('#prev-stages'),
+            nextArrow: $('#next-stages')
+        });
+
+    }
+}).resize()
