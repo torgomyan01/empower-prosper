@@ -108,13 +108,31 @@ header {
 .About-program-bg {
   position: absolute;
   left: -4%;
-  top: -320px;
+  top: -280px;
   z-index: -1;
+  width: 1200px;
+  height: 1300px;
 }
 @media (max-width: 768px) {
   .About-program-bg {
-    display: none;
+    width: 700px;
+    height: 700px;
+    left: -20%;
+    top: -90px;
   }
+}
+@media (max-width: 576px) {
+  .About-program-bg {
+    width: 700px;
+    height: 700px;
+    top: -120px;
+    left: -35%;
+  }
+}
+.About-program-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .About-program-heading {
   margin-left: 3.5625rem;
