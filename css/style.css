@@ -60,6 +60,31 @@ a {
   width: 100%;
 }
 
+.def-heading h2 {
+  color: #333;
+  font-size: 2.6875rem;
+  font-weight: 700;
+  line-height: 178.509%; /* 76.759px */
+  margin-bottom: -8px;
+  padding-bottom: 0;
+}
+@media (max-width: 576px) {
+  .def-heading h2 {
+    font-size: 2rem;
+  }
+}
+.def-heading span {
+  color: #828282;
+  font-size: 1.8125rem;
+  font-weight: 300;
+  line-height: 178.509%;
+}
+@media (max-width: 576px) {
+  .def-heading span {
+    font-size: 1.25rem;
+  }
+}
+
 .def-btn {
   border-radius: 13px;
   background: #E83B3A;
