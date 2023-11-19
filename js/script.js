@@ -36,3 +36,25 @@ menuItems.on('click', function (e){
     menuItems.removeClass(active);
     $(this).addClass(active)
 })
+
+
+$('.speakers-items').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    nextArrow: $('#next-slider'),
+    prevArrow: $('#prev-slider'),
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        }
+    ]
+});
