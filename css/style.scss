@@ -70,6 +70,30 @@ a {
   cursor: pointer;
 }
 
+.def-heading{
+  h2 {
+    color: #333;
+    font-size: 2.6875rem;
+    font-weight: 700;
+    line-height: 178.509%; /* 76.759px */
+    margin-bottom: -8px;
+    padding-bottom: 0;
+    @media (max-width: 576px) {
+      font-size: 2rem;
+    }
+  }
+
+  span {
+    color: #828282;
+    font-size: 1.8125rem;
+    font-weight: 300;
+    line-height: 178.509%;
+    @media (max-width: 576px) {
+      font-size: 1.25rem;
+    }
+  }
+}
+
 .def-btn {
   border-radius: 13px;
   background: #E83B3A;
@@ -239,6 +263,8 @@ a {
 }
 
 
+// .About-program
+
 .About-program {
   margin-top: 8rem;
   position: relative;
@@ -349,6 +375,181 @@ a {
   }
 
 }
+
+
+
+
+///.. .step Program
+
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  li{
+    position: relative;
+    width: 9px;
+    height: 9px;
+    margin: 0 5px;
+    background: #495AEF;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.slick-active{
+      width: 14px;
+      height: 14px;
+      button{
+        background: #E83B3A;
+      }
+    }
+    button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      padding: 5px;
+      cursor: pointer;
+      color: transparent;
+      border: 0;
+      outline: none;
+      background: transparent;
+      &:before{
+        content: "";
+        opacity: .75;
+      }
+    }
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .75 !important;
+  color: #FF6900 !important;
+}
+
+.stages-program{
+  background: #F9FAFD;
+  margin-top: 9.1875rem;
+  padding-bottom: 3.5rem;
+  position: relative;
+  @media (max-width: 768px) {
+    margin-top: 3.75rem;
+  }
+  &-heading{
+    padding-top: 3.75rem;
+    @media (max-width: 768px) {
+      margin-top: 2.375rem;
+    }
+    margin: 0 auto;
+    text-align: center;
+    h2{
+      color: #333;
+      text-align: center;
+      font-size: 2.6875rem;
+      font-weight: 700;
+      line-height: 178.509%; /* 76.759px */
+      margin-bottom: -8px;
+      padding-bottom: 0;
+      @media (max-width: 576px) {
+        font-size: 2rem ;
+      }
+    }
+    span{
+      color: #828282;
+      font-size: 1.8125rem;
+      font-weight: 300;
+      line-height: 178.509%;
+      @media (max-width: 576px) {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .slider-btn{
+    margin: 0 auto;
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+    img{
+      cursor: pointer;
+    }
+  }
+
+  &-row{
+    margin-top: 4.375rem;
+    position: relative;
+    @media (max-width: 768px) {
+      margin-top: 6.9rem;
+    }
+
+    &-box{
+      .icon{
+        position: relative;
+        margin: 0 auto;
+        &-etaps{
+          margin: 0 auto;
+          width: 96px;
+          height: 96px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          text-align: center;
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        &-right{
+          position: absolute;
+          top: 50%;
+          transform: rotateY(-50%);
+          right: -48px;
+        }
+      }
+
+      .title{
+        margin: 42px 0;
+        h2{
+          margin-bottom: 0;
+          padding-bottom: 0;
+          color: #000;
+          text-align: center;
+          font-size: 1.5rem;
+          font-weight: 700;
+          line-height: 150%; /* 36px */
+        }
+      }
+      .sub-title{
+        padding-left: 1.5rem;
+        color: #333;
+        max-width: 262px;
+        width: 100%;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 202.489%; /* 32.398px */
+        @media (max-width: 768px) {
+          padding-left: 1.5rem;
+          margin: 0 auto 20px auto;
+        }
+      }
+    }
+  }
+
+
+}
+
+///.. .step Program End
+
 
 .sendForm {
   &-body {
@@ -498,6 +699,9 @@ a {
 .select2-container--default .select2-results__option--selected {
   background: #FFECEC;
 }
+
+
+
 
 .reviews{
   width: 100%;
