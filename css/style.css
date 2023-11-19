@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 ::-webkit-scrollbar {
   width: 5px;
   height: 8px;
@@ -31,6 +32,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  font-family: "Inter", sans-serif;
+  line-height: normal;
 }
 
 a {
@@ -47,18 +50,34 @@ a {
     font-size: 14px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   html {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 .container {
-  max-width: 1256 px;
+  max-width: 1360px;
   width: 100%;
 }
 
-body {
-  overflow-x: hidden;
+header {
+  width: 100%;
+  height: 1000px;
+  background: url("../images/header-bg.svg") no-repeat center bottom;
+  background-size: contain;
+}
+
+.functions-item {
+  border-radius: 2.5rem;
+  border: 2px solid #E83B3A;
+  height: 19.1875rem;
+  padding: 2.3125rem 4.0625rem;
+}
+.functions-item.blue {
+  border-radius: 40px;
+  background: linear-gradient(102deg, rgba(0, 0, 0, 0.12) 41.42%, rgba(0, 0, 0, 0) 83.15%), #495AEF;
+  box-shadow: 0 14px 60.4px 0 rgba(73, 110, 239, 0.5);
+  border: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,7 @@ console.time();
 const colors = {
     white: '#FFFFFF',
     black: '#303030',
-    yellow: '#50BA1E',
+    gray1: '#333',
 }
 
 
