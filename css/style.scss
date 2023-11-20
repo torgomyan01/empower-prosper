@@ -942,6 +942,9 @@ a {
       position: absolute;
       bottom: 34px;
       right: 34px ;
+      @media (max-width: 576px) {
+        bottom: 21px;
+      }
     }
   }
 }

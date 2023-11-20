@@ -946,6 +946,11 @@ a {
   bottom: 34px;
   right: 34px;
 }
+@media (max-width: 576px) {
+  .reviews-item-more {
+    bottom: 21px;
+  }
+}
 
 .speakers .pattern-left {
   position: absolute;
