@@ -94,11 +94,7 @@ a {
 .def-btn {
   border-radius: 13px;
   background: #E83B3A;
-  display: flex;
   padding: 1.375rem 3.105875rem 1.4375rem 3.105875rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   color: #FFF;
   font-size: 1.1895rem;
   font-style: normal;
@@ -116,10 +112,16 @@ a {
   width: 100%;
   height: 1100px;
   background: url("../images/header-bg.svg") no-repeat center bottom;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   overflow: hidden;
   padding-top: 39px;
+}
+@media (max-width: 767px) {
+  .header {
+    background-size: 305%;
+    background-position: 82% bottom;
+  }
 }
 .header .pattern-left {
   position: absolute;
@@ -140,20 +142,58 @@ a {
   margin-top: 70px;
   text-shadow: rgb(255, 255, 255) 6px 0 0, rgb(255, 255, 255) 5.91686px 0.995377px 0, rgb(255, 255, 255) 5.66974px 1.96317px 0, rgb(255, 255, 255) 5.2655px 2.87655px 0px, rgb(255, 255, 255) 4.71532px 3.71022px 0, rgb(255, 255, 255) 4.03447px 4.44106px 0, rgb(255, 255, 255) 3.24181px 5.04883px 0, rgb(255, 255, 255) 2.35931px 5.51667px 0px, rgb(255, 255, 255) 1.41143px 5.83163px 0, rgb(255, 255, 255) 0.424423px 5.98497px 0, rgb(255, 255, 255) -0.574341px 5.97245px 0px, rgb(255, 255, 255) -1.55719px 5.79441px 0px, rgb(255, 255, 255) -2.49688px 5.45578px 0px, rgb(255, 255, 255) -3.36738px 4.96596px 0px, rgb(255, 255, 255) -4.14455px 4.33852px 0px, rgb(255, 255, 255) -4.80686px 3.59083px 0px, rgb(255, 255, 255) -5.33596px 2.74364px 0px, rgb(255, 255, 255) -5.71718px 1.8204px 0px, rgb(255, 255, 255) -5.93995px 0.84672px 0px, rgb(255, 255, 255) -5.99811px -0.150428px 0px, rgb(255, 255, 255) -5.89004px -1.14341px 0px, rgb(255, 255, 255) -5.61874px -2.1047px 0px, rgb(255, 255, 255) -5.19172px -3.00766px 0px, rgb(255, 255, 255) -4.62082px -3.82727px 0px, rgb(255, 255, 255) -3.92186px -4.54081px 0px, rgb(255, 255, 255) -3.11421px -5.12852px 0px, rgb(255, 255, 255) -2.22026px -5.57409px 0px, rgb(255, 255, 255) -1.26477px -5.86518px 0px, rgb(255, 255, 255) -0.274238px -5.99373px 0px, rgb(255, 255, 255) 0.723898px -5.95617px 0px, rgb(255, 255, 255) 1.70197px -5.75355px 0px, rgb(255, 255, 255) 2.63288px -5.39147px 0px, rgb(255, 255, 255) 3.49082px -4.87998px 0px, rgb(255, 255, 255) 4.25202px -4.23324px 0px, rgb(255, 255, 255) 4.89538px -3.46919px 0px, rgb(255, 255, 255) 5.40307px -2.60899px 0px, rgb(255, 255, 255) 5.76102px -1.67649px 0px, rgb(255, 255, 255) 5.95932px -0.697531px 0px;
 }
+@media (max-width: 767px) {
+  .header-title {
+    margin-top: 300px;
+    font-size: 29px;
+  }
+}
 .header-title span {
   color: #495AEF;
+}
+@media (max-width: 767px) {
+  .header .def-btn {
+    background: linear-gradient(102deg, rgba(0, 0, 0, 0.12) 41.42%, rgba(0, 0, 0, 0) 83.15%), #495AEF;
+  }
 }
 .header-time {
   width: auto;
   position: absolute;
   top: 175px;
-  right: 0;
+  right: 10px;
+}
+@media (max-width: 1251px) {
+  .header-time {
+    top: 395px;
+    background: rgba(255, 255, 255, 0.3490196078);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .header-time {
+    right: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 184px;
+  }
+}
+@media (max-width: 576px) {
+  .header-time {
+    width: 90%;
+  }
 }
 .header-time-title {
   color: #5A5A5A;
   font-size: 19.03px;
   font-weight: 500;
   margin-bottom: 39px;
+}
+@media (max-width: 767px) {
+  .header-time-title {
+    text-align: center;
+  }
 }
 .header-time-body {
   display: flex;
@@ -198,6 +238,12 @@ a {
   font-weight: 500;
   margin-right: 19px;
   transition: 0.3s;
+  white-space: nowrap;
+}
+@media (max-width: 1217px) {
+  .menu-site-item {
+    margin-bottom: 20px;
+  }
 }
 .menu-site-item:hover {
   color: #E83B3A;
@@ -214,6 +260,17 @@ a {
   align-items: center;
   position: relative;
 }
+@media (max-width: 1217px) {
+  .menu-site-items {
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+}
+@media (max-width: 767px) {
+  .menu-site-items {
+    display: none;
+  }
+}
 .menu-site-items-solid-one {
   width: 52px;
   height: 2px;
@@ -223,6 +280,11 @@ a {
   bottom: -17px;
   transition: 0.5s;
 }
+@media (max-width: 1217px) {
+  .menu-site-items-solid-one {
+    display: none;
+  }
+}
 .menu-site-items-solid-two {
   width: 29px;
   height: 2px;
@@ -231,6 +293,11 @@ a {
   left: 0;
   bottom: -22px;
   transition: 0.8s;
+}
+@media (max-width: 1217px) {
+  .menu-site-items-solid-two {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -280,7 +347,6 @@ a {
 .functions-item.blue {
   border-radius: 40px;
   background: linear-gradient(102deg, rgba(0, 0, 0, 0.12) 41.42%, rgba(0, 0, 0, 0) 83.15%), #495AEF;
-  box-shadow: 0 14px 60.4px 0 rgba(73, 110, 239, 0.5);
   border: 0;
 }
 
@@ -290,7 +356,7 @@ a {
 }
 @media (max-width: 576px) {
   .About-program {
-    margin-top: 6.25rem;
+    margin-top: 4.25rem;
   }
 }
 .About-program-bg {
@@ -407,6 +473,7 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  align-items: center;
 }
 .slick-dots li {
   position: relative;
@@ -484,6 +551,7 @@ a {
 @media (max-width: 576px) {
   .stages-program-heading h2 {
     font-size: 2rem;
+    line-height: unset;
   }
 }
 .stages-program-heading span {
@@ -571,7 +639,7 @@ a {
 }
 @media (max-width: 768px) {
   .stages-program-row-box .sub-title {
-    padding-left: 1.5rem;
+    padding-left: 0;
     margin: 0 auto 20px auto;
   }
 }
@@ -846,6 +914,7 @@ a {
   border: 2px solid #D8D8D8;
   background: #FFF;
   border-top: 0;
+  overflow: auto;
 }
 
 .select2-selection__arrow:after {
@@ -950,6 +1019,46 @@ a {
   .reviews-item-more {
     bottom: 21px;
   }
+}
+
+.mobile-menu {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2784313725);
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 0.3s;
+  padding: 40px 25px 25px;
+}
+.mobile-menu.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+.mobile-menu-items {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.mobile-menu-item {
+  color: #333;
+  display: block;
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.26);
+  width: 100%;
+  padding-bottom: 5px;
+  transition: 0.3s;
+}
+.mobile-menu-item:hover {
+  border-bottom: 1px solid rgb(51, 51, 51);
+}
+.mobile-menu-item:last-child {
+  border: 0;
 }
 
 .speakers .pattern-left {

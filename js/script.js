@@ -80,9 +80,11 @@ $('.speakers-items').slick({
 
 
 let statusSlider = true;
+let statusSliderTwo = true;
 
 $(window).on('resize', function (){
-    if($(window).width() <= 768 && statusSlider){
+    const windowWidth = $(window).width();
+    if(windowWidth <= 768 && statusSlider){
         statusSlider = false;
         $('.stages-program-row').slick({
             dots: true,
@@ -97,8 +99,9 @@ $(window).on('resize', function (){
         });
 
     }
-    if($(window).width() <= 992 && statusSlider){
-        statusSlider = false;
+    if(windowWidth <= 992 && statusSliderTwo){
+        statusSliderTwo = false;
+        console.log(111)
         $('.reviews-row').slick({
             dots: true,
             infinite: true,
@@ -110,7 +113,22 @@ $(window).on('resize', function (){
             prevArrow: $('#prev-stages2'),
             nextArrow: $('#next-stages2')
         });
-
     }
 }).resize()
+
+
+const mobileMenu = $('.mobile-menu');
+const mobileMenuClose = $('#mobile-menu-close');
+const mobileMenuOpen = $('#mobile-menu-open');
+
+
+mobileMenuOpen.on('click', function (){
+    mobileMenu.addClass(active)
+    $('body').addClass('overflow-hidden')
+})
+
+mobileMenuClose.on('click', function (){
+    mobileMenu.removeClass(active)
+    $('body').removeClass('overflow-hidden')
+})
 

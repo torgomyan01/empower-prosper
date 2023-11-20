@@ -33,18 +33,13 @@
 
 
 <div class="overflow-hidden">
-
-
   <header class="header">
-
     <img src="images/Pattern-left.svg" alt="Pattern-left" class="pattern-left" width="1122" height="1420">
     <img src="images/pattern-right.svg" alt="Pattern-left" class="pattern-right" width="1122" height="1420">
-
     <div class="container position-relative">
-
       <div class="menu-site">
         <a href="index.html" class="">
-          <img src="images/logo.svg" alt="logo" height="132" width="311" class="w-200">
+          <img src="images/logo.svg" alt="logo" height="132" width="311" class="w-200 me-3">
         </a>
         <div class="menu-site-items">
           <a href="#" class="menu-site-item active">
@@ -74,9 +69,18 @@
           <div class="menu-site-items-solid-one"></div>
           <div class="menu-site-items-solid-two"></div>
         </div>
-        <a href="#">
-          <img src="images/icon-telegram.svg" alt="icon-telegram" width="35" height="35">
-        </a>
+        <div>
+          <div class="d-block d-md-none mb-3">
+            <svg width="32" height="20" viewBox="0 0 32 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="mobile-menu-open">
+              <path d="M0 1H32" stroke="#5A5A5A" stroke-width="2"/>
+              <path d="M0 10H20" stroke="#5A5A5A" stroke-width="2"/>
+              <path d="M0 19H20" stroke="#5A5A5A" stroke-width="2"/>
+            </svg>
+          </div>
+          <a href="#">
+            <img src="images/icon-telegram.svg" alt="icon-telegram" width="35" height="35">
+          </a>
+        </div>
       </div>
 
 
@@ -102,11 +106,11 @@
       <h1 class="header-title">
         Программа <span>Empower & Prosper</span> для предпринимателей и владельцев бизнеса
       </h1>
-      <p class="fs-17 c-gray4 mt-20">
+      <p class="fs-17 c-gray4 mt-20 d-none d-md-block">
         <i>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i>
       </p>
 
-      <div class="mt-52">
+      <div class="mt-52 text-center text-md-start">
         <button class="def-btn">
           <img class="me-22" src="images/Pen.svg" alt="pen" width="22" height="26">
           Подать заявку
@@ -116,6 +120,46 @@
     </div>
 
   </header>
+
+
+  <div class="mobile-menu">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <a href="#">
+        <img src="images/logo.svg" alt="logo" width="311" height="132" class="w-90 h-auto">
+      </a>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="40px" height="40px" id="mobile-menu-close">
+        <path
+          d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"/>
+      </svg>
+    </div>
+    <div class="mobile-menu-items">
+      <a href="#" class="mobile-menu-item active">
+        О программе
+      </a>
+      <a href="#" class="mobile-menu-item">
+        Этапы программы
+      </a>
+      <a href="#" class="mobile-menu-item">
+        Требования
+      </a>
+      <a href="#" class="mobile-menu-item">
+        Подать заявку
+      </a>
+      <a href="#" class="mobile-menu-item">
+        Отзывы участников
+      </a>
+      <a href="#" class="mobile-menu-item">
+        Спикеры
+      </a>
+      <a href="#" class="mobile-menu-item">
+        FAQ
+      </a>
+      <a href="#" class="mobile-menu-item">
+        Контакты
+      </a>
+    </div>
+  </div>
 
   <section class="functions">
     <div class="container">
@@ -127,7 +171,7 @@
         <div class="row mt-96 align-items-stretch ">
           <div class="col-4">
             <div class="functions-item blue">
-              <div class="mb-40">
+              <div class="mb-20 mb-md-40">
                 <img src="images/flag-usa.svg" alt="flag-usa" width="91" height="99">
               </div>
               <p class="mb-0 fs-sm-22 fs-13  c-white fw-500">
@@ -137,7 +181,7 @@
           </div>
           <div class="col-4">
             <div class="functions-item">
-              <div class="mb-40">
+              <div class="mb-20 mb-md-40">
                 <img src="images/portfolio.svg" alt="portfolio" width="91" height="99">
               </div>
               <p class="mb-0 fs-sm-22 fs-13 c-gray1 fw-500">
@@ -147,7 +191,7 @@
           </div>
           <div class="col-4">
             <div class="functions-item">
-              <div class="mb-40">
+              <div class="mb-20 mb-md-40">
                 <img src="images/contacts.svg" alt="contacts" width="91" height="99">
               </div>
               <p class="mb-0 fs-sm-22 fs-13 c-gray1 fw-500">
@@ -159,7 +203,7 @@
       </div>
 
       <div class="text-center mt-sm-98 mt-63">
-        <button class="btn btn-primary bgc-blue w-282 h-70 fs-19 br-13">
+        <button class="btn btn-primary bgc-blue w-100 w-md-282 h-70 fs-19 br-13">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="26" viewBox="0 0 22 26" fill="none" class="me-22">
             <g clip-path="url(#clip0_11_8)">
               <path
@@ -306,7 +350,7 @@
           </div>
           <div class="title">
             <h2>
-              Стажировка <br>  в США
+              Стажировка <br> в США
             </h2>
           </div>
           <div class="sub-title">
@@ -478,7 +522,7 @@
       </div>
 
       <div class="row reviews-row">
-        <div class="col-6 mb-26">
+        <div class="col-12 col-lg-6 mb-26 mx-3 mx-lg-0">
           <div class="reviews-item">
             <div class="d-flex justify-content-start align-items-start">
               <img src="images/user-one.png" alt="Наиля, стажировка в Денвере" width="65" height="65" class="me-15">
@@ -528,7 +572,7 @@
             <a href="#" class="reviews-item-more">Читать больше </a>
           </div>
         </div>
-        <div class="col-6 mb-26">
+        <div class="col-12 col-lg-6 mb-26 mx-3 mx-lg-0">
           <div class="reviews-item">
             <div class="d-flex justify-content-start align-items-start">
               <img src="images/user-two.png" alt="Дарья, стажировка в Чикаго" width="65" height="65" class="me-15">
@@ -577,7 +621,7 @@
             <a href="#" class="reviews-item-more">Читать больше </a>
           </div>
         </div>
-        <div class="col-6 mb-26">
+        <div class="col-12 col-lg-6 mb-26 mx-3 mx-lg-0">
           <div class="reviews-item">
             <div class="d-flex justify-content-start align-items-start">
               <img src="images/user-tree.png" alt="Дарья, стажировка в Чикаго" width="65" height="65" class="me-15">
@@ -626,7 +670,7 @@
             <a href="#" class="reviews-item-more">Читать больше </a>
           </div>
         </div>
-        <div class="col-6 mb-26">
+        <div class="col-12 col-lg-6 mb-26 mx-3 mx-lg-0">
           <div class="reviews-item">
             <div class="d-flex justify-content-start align-items-start">
               <img src="images/user-foo.png" alt="Дарья, стажировка в Чикаго" width="65" height="65" class="me-15">
@@ -680,11 +724,11 @@
     </div>
   </section>
 
-  <section class="speakers mt-250 position-relative">
+  <section class="speakers mt-100 mt-md-250 position-relative">
     <img src="images/Pattern-left.svg" alt="Pattern-left" class="pattern-left" width="1122" height="1420">
-    <div class="container">
-      <h3 class="text-end fs-43 c-gray1 fw-bold">Спикеры программы</h3>
-      <p class="c-gray3 fs-29 text-end">Empower & Prosper</p>
+    <div class="container position-relative">
+      <h3 class="text-end fs-32 fs-md-43 c-gray1 fw-bold">Спикеры программы</h3>
+      <p class="c-gray3 fs-20 fs-md-29 text-end">Empower & Prosper</p>
       <div class="speakers-items mt-114">
         <div class="speakers-item">
           <img src="images/speakers-1.png" alt="speakers-1" height="141" width="141" class="mb-18">
@@ -707,8 +751,13 @@
             Briana Weisinger
           </p>
           <p class="fs-15 c-gray1 lh-21">
-            Бриана Вайзингер занимает позицию заместителя регионального руководителя в Центре развития малого бизнеса (SBDC). Ее руководство распространяется на 11 центров SBDC, в которых работают около 120 специалистов. Вклад этих центров в экономику оценивается более чем в 1,6 миллиарда долларов. Благодаря их работе было открыто свыше 515 новых компаний, а услугами центров воспользовались более 10 000 предпринимателей.
-            Ранее Бриана работала в Калифорнийском университете Сан-Диего, где была первым ментором стартапов и основала конференцию Ignite @ UC San Diego. Вайзингер активно участвует в общественной жизни, выступая на национальных и международных мероприятиях.
+            Бриана Вайзингер занимает позицию заместителя регионального руководителя в Центре развития малого бизнеса
+            (SBDC). Ее руководство распространяется на 11 центров SBDC, в которых работают около 120 специалистов. Вклад
+            этих центров в экономику оценивается более чем в 1,6 миллиарда долларов. Благодаря их работе было открыто
+            свыше 515 новых компаний, а услугами центров воспользовались более 10 000 предпринимателей.
+            Ранее Бриана работала в Калифорнийском университете Сан-Диего, где была первым ментором стартапов и основала
+            конференцию Ignite @ UC San Diego. Вайзингер активно участвует в общественной жизни, выступая на
+            национальных и международных мероприятиях.
           </p>
         </div>
         <div class="speakers-item">
@@ -717,7 +766,11 @@
             Специалисты The Center for Global Leadership (CGL)
           </p>
           <p class="fs-15 c-gray1 lh-21">
-            CGL предлагает передовую программу лидерского развития, высококлассное наставничество и специальные мероприятия, которые призваны помочь участникам реализовать свой потенциал как профессиональных и социально ответственных «граждан мира». The Center for Global Leadership создает уникальные возможности для общения и обучения, объединяя ведущих наставников и лидеров со всего мира через обширную сеть онлайн и офлайн площадок.
+            CGL предлагает передовую программу лидерского развития, высококлассное наставничество и специальные
+            мероприятия, которые призваны помочь участникам реализовать свой потенциал как профессиональных и социально
+            ответственных «граждан мира». The Center for Global Leadership создает уникальные возможности для общения и
+            обучения, объединяя ведущих наставников и лидеров со всего мира через обширную сеть онлайн и офлайн
+            площадок.
           </p>
         </div>
         <div class="speakers-item">
@@ -741,13 +794,17 @@
 
         <div id="prev-slider" class="speakers-arrows me-29 cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" viewBox="0 0 50 16" fill="none">
-            <path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928936C7.68054 0.538412 7.04738 0.538412 6.65685 0.928936L0.292892 7.2929ZM50 7L1 7L1 9L50 9L50 7Z" fill="#828282"/>
+            <path
+              d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95263 8.46159 1.31946 8.07107 0.928936C7.68054 0.538412 7.04738 0.538412 6.65685 0.928936L0.292892 7.2929ZM50 7L1 7L1 9L50 9L50 7Z"
+              fill="#828282"/>
           </svg>
         </div>
 
         <div id="next-slider" class="speakers-arrows cursor-pointer">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="16" viewBox="0 0 50 16" fill="none">
-            <path d="M49.7071 8.70711C50.0976 8.31658 50.0976 7.68342 49.7071 7.29289L43.3431 0.928932C42.9526 0.538408 42.3195 0.538408 41.9289 0.928932C41.5384 1.31946 41.5384 1.95262 41.9289 2.34315L47.5858 8L41.9289 13.6569C41.5384 14.0474 41.5384 14.6805 41.9289 15.0711C42.3195 15.4616 42.9526 15.4616 43.3431 15.0711L49.7071 8.70711ZM0 9H49V7H0V9Z" fill="#828282"/>
+            <path
+              d="M49.7071 8.70711C50.0976 8.31658 50.0976 7.68342 49.7071 7.29289L43.3431 0.928932C42.9526 0.538408 42.3195 0.538408 41.9289 0.928932C41.5384 1.31946 41.5384 1.95262 41.9289 2.34315L47.5858 8L41.9289 13.6569C41.5384 14.0474 41.5384 14.6805 41.9289 15.0711C42.3195 15.4616 42.9526 15.4616 43.3431 15.0711L49.7071 8.70711ZM0 9H49V7H0V9Z"
+              fill="#828282"/>
           </svg>
         </div>
       </div>
@@ -769,15 +826,20 @@
         <div class="accordion questions-wrapper-accordion" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne">
                 Зачем мне участвовать в программе Empower&Prosper?
               </button>
             </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                 data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <ul class="text-body">
                   <li>Кандидат должен проживать или работать в регионе за пределами Москвы и Санкт-Петербурга</li>
-                  <li>Кандидат должен иметь статус владельца или совладельца небольшой или средней компании, либо быть активным членом некоммерческой организации, не связанной с политикой. Допустимые организационно-правовые формы ведения деятельности: самозанятость, ИП, ООО, АО, НКО</li>
+                  <li>Кандидат должен иметь статус владельца или совладельца небольшой или средней компании, либо быть
+                    активным членом некоммерческой организации, не связанной с политикой. Допустимые
+                    организационно-правовые формы ведения деятельности: самозанятость, ИП, ООО, АО, НКО
+                  </li>
                   <li>Кандидаты должны обладать хорошим уровнем владения английским языком</li>
                 </ul>
               </div>
@@ -785,15 +847,20 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                      aria-expanded="true" aria-controls="collapseOne">
                 Я - самозанятый, могу ли я участвовать?
               </button>
             </h2>
-            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTree" data-bs-parent="#accordionExample">
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTree"
+                 data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <ul class="text-body">
                   <li>Кандидат должен проживать или работать в регионе за пределами Москвы и Санкт-Петербурга</li>
-                  <li>Кандидат должен иметь статус владельца или совладельца небольшой или средней компании, либо быть активным членом некоммерческой организации, не связанной с политикой. Допустимые организационно-правовые формы ведения деятельности: самозанятость, ИП, ООО, АО, НКО</li>
+                  <li>Кандидат должен иметь статус владельца или совладельца небольшой или средней компании, либо быть
+                    активным членом некоммерческой организации, не связанной с политикой. Допустимые
+                    организационно-правовые формы ведения деятельности: самозанятость, ИП, ООО, АО, НКО
+                  </li>
                   <li>Кандидаты должны обладать хорошим уровнем владения английским языком</li>
                 </ul>
               </div>
@@ -801,15 +868,20 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingTree">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree" aria-expanded="true" aria-controls="collapseOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTree"
+                      aria-expanded="true" aria-controls="collapseOne">
                 С каким проектом можно принять участие в программе?
               </button>
             </h2>
-            <div id="collapseTree" class="accordion-collapse collapse" aria-labelledby="headingTree" data-bs-parent="#accordionExample">
+            <div id="collapseTree" class="accordion-collapse collapse" aria-labelledby="headingTree"
+                 data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <ul class="text-body">
                   <li>Кандидат должен проживать или работать в регионе за пределами Москвы и Санкт-Петербурга</li>
-                  <li>Кандидат должен иметь статус владельца или совладельца небольшой или средней компании, либо быть активным членом некоммерческой организации, не связанной с политикой. Допустимые организационно-правовые формы ведения деятельности: самозанятость, ИП, ООО, АО, НКО</li>
+                  <li>Кандидат должен иметь статус владельца или совладельца небольшой или средней компании, либо быть
+                    активным членом некоммерческой организации, не связанной с политикой. Допустимые
+                    организационно-правовые формы ведения деятельности: самозанятость, ИП, ООО, АО, НКО
+                  </li>
                   <li>Кандидаты должны обладать хорошим уровнем владения английским языком</li>
                 </ul>
               </div>
@@ -817,15 +889,20 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFour">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                      aria-expanded="true" aria-controls="collapseFour">
                 Каким требованиям необходимо соответствовать, чтобы принять участие в программе?
               </button>
             </h2>
-            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                 data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <ul class="text-body">
                   <li>Кандидат должен проживать или работать в регионе за пределами Москвы и Санкт-Петербурга</li>
-                  <li>Кандидат должен иметь статус владельца или совладельца небольшой или средней компании, либо быть активным членом некоммерческой организации, не связанной с политикой. Допустимые организационно-правовые формы ведения деятельности: самозанятость, ИП, ООО, АО, НКО</li>
+                  <li>Кандидат должен иметь статус владельца или совладельца небольшой или средней компании, либо быть
+                    активным членом некоммерческой организации, не связанной с политикой. Допустимые
+                    организационно-правовые формы ведения деятельности: самозанятость, ИП, ООО, АО, НКО
+                  </li>
                   <li>Кандидаты должны обладать хорошим уровнем владения английским языком</li>
                 </ul>
               </div>
@@ -833,15 +910,20 @@
           </div>
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingFive">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                      aria-expanded="true" aria-controls="collapseFive">
                 Сколько стоит участие в программе?
               </button>
             </h2>
-            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                 data-bs-parent="#accordionExample">
               <div class="accordion-body">
                 <ul class="text-body">
                   <li>Кандидат должен проживать или работать в регионе за пределами Москвы и Санкт-Петербурга</li>
-                  <li>Кандидат должен иметь статус владельца или совладельца небольшой или средней компании, либо быть активным членом некоммерческой организации, не связанной с политикой. Допустимые организационно-правовые формы ведения деятельности: самозанятость, ИП, ООО, АО, НКО</li>
+                  <li>Кандидат должен иметь статус владельца или совладельца небольшой или средней компании, либо быть
+                    активным членом некоммерческой организации, не связанной с политикой. Допустимые
+                    организационно-правовые формы ведения деятельности: самозанятость, ИП, ООО, АО, НКО
+                  </li>
                   <li>Кандидаты должны обладать хорошим уровнем владения английским языком</li>
                 </ul>
               </div>
