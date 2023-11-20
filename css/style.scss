@@ -80,6 +80,7 @@ a {
     padding-bottom: 0;
     @media (max-width: 576px) {
       font-size: 2rem;
+      margin-bottom: -3px;
       line-height: 128%;
     }
   }
@@ -248,12 +249,46 @@ a {
 }
 
 .functions {
+
+    &-logo-img{
+    @media (max-width: 576px) {
+      width: 200px;
+      height: 100px;
+      transform: translateX(-20px);
+    }
+    }
+
+&-row{
+  @media (max-width: 768px) {
+   overflow-x: auto;
+    overflow-y: hidden;
+    &::-webkit-scrollbar {
+      width: 5px;
+      height: 0;
+      border-radius: 5px;
+    }
+  }
+  .row{
+    @media (max-width: 768px) {
+      width: 1200px;
+    }
+    @media (max-width: 576px) {
+      width: 1000px;
+    }
+    @media (max-width: 376px) {
+      width: 900px;
+    }
+  }
+}
+
   &-item {
     border-radius: 2.5rem;
     border: 2px solid #E83B3A;
     padding: 2.3125rem 4.0625rem;
     height: 100%;
-
+    @media (max-width: 576px) {
+      padding: 1.3784375rem 2.421625rem;
+    }
     &.blue {
       border-radius: 40px;
       background: linear-gradient(102deg, rgba(0, 0, 0, 0.12) 41.42%, rgba(0, 0, 0, 0.00) 83.15%), #495AEF;
@@ -269,7 +304,9 @@ a {
 .About-program {
   margin-top: 8rem;
   position: relative;
-
+  @media (max-width: 576px) {
+    margin-top: 6.25rem;
+  }
   &-bg {
     position: absolute;
     left: -4%;
@@ -687,18 +724,35 @@ a {
 
 
 .sendForm {
+  .def-heading{
+    margin: 0 auto 28px auto;
+    text-align: center;
+    @media (max-width: 576px) {
+      text-align: start;
+      margin-bottom: 50px;
+    }
+  }
   &-body {
     background: url("../images/form.webp") no-repeat center;
     background-size: cover;
     padding-top: 72px;
     padding-bottom: 106px;
-
+    &-title{
+      @media (max-width: 576px) {
+        max-width: 307px;
+        margin: 0 auto !important;
+        width: 100%;
+      }
+    }
     form {
       width: 100%;
       border-radius: 25px;
       background: #FFF;
       box-shadow: 0 4px 8.8px 0 rgba(29, 38, 62, 0.12);
       padding: 34px 24px;
+      @media (max-width: 576px) {
+        padding: 30px 12px;
+      }
     }
   }
 }
@@ -710,7 +764,9 @@ a {
   align-items: start;
   flex-direction: column;
   margin-bottom: 0.625rem;
-
+  @media (max-width: 992px) {
+    margin-bottom: 0;
+  }
   &.active {
     span {
       transform: translateY(22px);
@@ -840,6 +896,20 @@ a {
 
 .reviews{
   width: 100%;
+  .def-heading{
+    text-align: center;
+  }
+
+  .slider-btn{
+    display: none;
+    @media (max-width: 992px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3.4375rem;
+    }
+  }
+
   &-item{
     height: 395px;
     padding: 31px 34px 21px 34px;
@@ -848,6 +918,18 @@ a {
     background: #FFF;
     position: relative;
     transition: 0.3s;
+    @media (max-width: 1200px) {
+      height: 450px;
+    }
+    @media (max-width: 1060px) {
+      height: 490px;
+    }
+    @media (max-width: 1024px) {
+      height: 420px;
+    }
+    @media (max-width: 576px) {
+      height: auto;
+    }
     &:hover{
       box-shadow: 0 5px 19.7px 0 rgba(35, 32, 38, 0.12);
     }
