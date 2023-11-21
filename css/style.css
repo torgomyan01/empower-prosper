@@ -110,9 +110,9 @@ a {
 
 .header {
   width: 100%;
-  height: 1100px;
-  background: url("../images/header-bg.svg") no-repeat center bottom;
-  background-size: cover;
+  height: 1000px;
+  background: url("../images/header-bg.svg") no-repeat center 150px;
+  background-size: contain;
   position: relative;
   overflow: hidden;
   padding-top: 39px;
@@ -300,6 +300,9 @@ a {
   }
 }
 
+.functions {
+  margin-top: -240px;
+}
 @media (max-width: 576px) {
   .functions-logo-img {
     width: 200px;
@@ -339,6 +342,19 @@ a {
   padding: 2.3125rem 4.0625rem;
   height: 100%;
 }
+.functions-item .img2 {
+  display: none;
+}
+@media (max-width: 768px) {
+  .functions-item .img2 {
+    display: initial;
+  }
+}
+@media (max-width: 768px) {
+  .functions-item .img1 {
+    display: none;
+  }
+}
 @media (max-width: 576px) {
   .functions-item {
     padding: 1.3784375rem 2.421625rem;
@@ -348,6 +364,20 @@ a {
   border-radius: 40px;
   background: linear-gradient(102deg, rgba(0, 0, 0, 0.12) 41.42%, rgba(0, 0, 0, 0) 83.15%), #495AEF;
   border: 0;
+}
+@media (max-width: 768px) {
+  .functions-item.blue {
+    border-radius: 2.5rem;
+    background: #fff;
+    border: 2px solid #E83B3A;
+    padding: 2.3125rem 4.0625rem;
+    height: 100%;
+  }
+}
+@media (max-width: 768px) and (max-width: 576px) {
+  .functions-item.blue {
+    padding: 1.3784375rem 2.421625rem;
+  }
 }
 
 .About-program {
@@ -474,6 +504,7 @@ a {
   justify-content: center;
   margin-top: 20px;
   align-items: center;
+  padding-left: 0;
 }
 .slick-dots li {
   position: relative;
@@ -1061,6 +1092,14 @@ a {
   border: 0;
 }
 
+@media (max-width: 768px) {
+  .speakers-slider-icon {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+  }
+}
 .speakers .pattern-left {
   position: absolute;
   left: 0;
@@ -1068,6 +1107,21 @@ a {
 }
 .speakers-item {
   margin-right: 66px;
+}
+@media (max-width: 576px) {
+  .speakers-item {
+    margin-right: 0;
+  }
+}
+@media (max-width: 576px) {
+  .speakers-item-user-logo {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .speakers-item-text1 {
+    text-align: center;
+  }
 }
 .speakers-arrows * {
   transition: 0.3s;
