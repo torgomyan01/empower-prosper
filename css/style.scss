@@ -313,6 +313,9 @@ a {
 
 .functions {
   margin-top: -240px;
+  @media (max-width: 767px) {
+    margin-top: -10px;
+  }
   &-logo-img {
     @media (max-width: 576px) {
       width: 200px;

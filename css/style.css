@@ -303,6 +303,11 @@ a {
 .functions {
   margin-top: -240px;
 }
+@media (max-width: 767px) {
+  .functions {
+    margin-top: -10px;
+  }
+}
 @media (max-width: 576px) {
   .functions-logo-img {
     width: 200px;
