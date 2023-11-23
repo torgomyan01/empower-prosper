@@ -7,6 +7,12 @@ const {
 }
 
 
+const validateEmail = (email) => {
+    return email.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    );
+};
+
 const defaultInput = $('.def-input input');
 const inpLabel = $('.def-input');
 
@@ -20,6 +26,10 @@ defaultInput.on('blur', function (){
 
 defaultInput.on('focus', function (){
     $(this).parent().addClass(active);
+})
+
+defaultInput.on('input', function (){
+    $(this).parent().removeClass('error');
 })
 
 
@@ -130,5 +140,21 @@ mobileMenuOpen.on('click', function (){
 mobileMenuClose.on('click', function (){
     mobileMenu.removeClass(active)
     $('body').removeClass('overflow-hidden')
+})
+
+
+const sendMail = $('#send-mail');
+
+sendMail.on('submit', function (e){
+    e.preventDefault()
+    const username = this.username;
+    const email = this.email;
+    if(!username.value){
+        $(username).parent().addClass('error')
+    }
+
+    if(!email.value || validateEmail(email.value)){
+        $(email).parent().addClass('error')
+    }
 })
 
