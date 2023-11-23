@@ -158,3 +158,15 @@ sendMail.on('submit', function (e){
     }
 })
 
+PrintDate()
+
+setInterval(PrintDate, 1000)
+
+
+function PrintDate(){
+    const endOfMonth = moment('2023.12.20');
+    const countDown = moment.duration(endOfMonth.diff(moment()))._data;
+    $('#day').text(countDown.days);
+    $('#hour-count').text(countDown.hours);
+    $('#min-count').text(countDown.minutes);
+}
